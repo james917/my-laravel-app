@@ -11,18 +11,31 @@
 |
 */
 
+
+
 Route::get('/', function()
 {
+	// Schema::create('art', function($newtable)
+	// {
+	// 	$newtable->increments('id');
+	// 	$newtable->string('artist');
+	// 	$newtable->string('title',500);
+	// 	$newtable->text('dscription');
+	// 	$newtable->date('created');
+	// 	$newtable->date('exhibition_date');
+	// 	$newtable->timestamps();
+	// });
+
 	return View::make('hello');
 });
 
-Route::get('about/directions', function()
-{
-	return 'About Directions goes here.';
-});
+// Route::get('about/directions', function()
+// {
+// 	return 'About Directions goes here.';
+// });
 
 
-Route::get('about/{theSubject}', function($theSubject)
-{
-	return $theSubject."About {$theSubject} goes here.";
-});
+// Route::get('about/{theSubject}', function($theSubject)
+// {
+// 	return $theSubject."About {$theSubject} goes here.";
+// });
